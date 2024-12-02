@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Learning Dexterity at Human Scale">
+  <meta name="keywords" content="Robot Learning, Dexterous Manipulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Dexterity at Human Scale</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script defer src="./static/js/fontawesome.all.min.js"></script>-->
+  <script src="https://kit.fontawesome.com/8a0d0cac45.js" crossorigin="anonymous"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Learning Dexterity at Human Scale</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"> Under Submission</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We propose Baton, a robot learning system that scales dexterous 
+              robot manipulation through passive human data collection. Collecting large-scale, 
+              real-world data is a long-standing problem in robot learning. Current solutions 
+              rely on teleoperation, which is prohibitive at scale due to robot deployment and 
+              operational latency. Instead, we show that data collection directly from humans 
+              is a scalable alternative. For the first time, we are able to explore generalizaion 
+              properties and scaling laws of dexterous policies while collecting as little as one 
+              hour of data per task. Our untethered setup, requiring only motion capture gloves 
+              and a camera, allows individuals to record accurate hand movements while naturally 
+              performing a wide range of manipulation tasks. Across all tasks, Baton 
+              averages a throughput of over 400 high-quality demos / hour, a 9.85x speedup 
+              over VR teleoperation. We design novel keypoint state representations and train 
+              closed-loop morphology-agnostic policies to model 3D fingertip coordinates. 
+              We deploy our policies on an Allegro Hand mounted on a Franka Arm and demonstrate 
+              generalization over diverse object poses for all tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 style="margin-bottom: 1em ;" class="title is-3">Policy Rollouts</h2>
+          <div class="content">
+            <p>In the videos below you can see BATON solve three tasks.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Pick and Place Block Example 1</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/pickblock1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Pick and Place Block Example 2</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/pickblock2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Open Oven Example 1</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%"> 
+              <source src="./static/videos/openoven1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Open Oven Example 2</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%"> 
+              <source src="./static/videos/openoven2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Collect Balls in Basket Example 1</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/tennisball1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Collect Balls in Basket Example 2</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/tennisball2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Open Unseen Oven</h3>
+            <video id="dollyzoom" controls muted loop playsinline height="100%">
+              <source src="./static/videos/openovenood.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
