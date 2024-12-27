@@ -96,6 +96,57 @@
       </div>
   </section>
 
+  <section class="section">
+    <div class = "container is-max-desktop">
+      <div class = "columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <h2 style="margin-bottom: 1em ;" class="title is-3">Data Collection and Deployment Hardware</h2>
+            <div class="has-text-centered">
+                <img src="./static/images/harware.jpg" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <p class="is-size-6 has-text-grey">We collect fingertips in wrist frame with Manus Metagloves and map them to camera frame with an ArUco tag. In inference, we get fingertips in base frame with forward kinematics and map them to camera frame by calibrating a camera against the robot base. We use an Allegro Hand mounted on Franka Arm to deploy our policies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class = "container is-max-desktop">
+      <div class = "columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <h2 style="margin-bottom: 1em ;" class="title is-3">Closed-loop Policy</h2>
+            <div class="has-text-centered">
+                <img src="./static/images/closed_loop_policy.jpg" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <p class="is-size-6 has-text-grey">The state representation is a concatenation of end-effector and object keypoints. The end-effector keypoints
+                  are the 3D coordinates of the index, middle, ring, and thumb fingers. The object keypoints are a set of 2D pixels, mapped to starting frames
+                  with a correspondence model and to subsequent frames with a point tracker model, then unprojected into 3D. A queue of past states is fed
+                  into the policy, which predicts the next end-effector points. During inference, the robot joint angles are recovered with inverse kinematics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class = "container is-max-desktop">
+      <div class = "columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <h2 style="margin-bottom: 1em ;" class="title is-3">From Human to Robot</h2>
+            <div class="has-text-centered">
+                <img src="./static/images/tasks.png" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <p class="is-size-6 has-text-grey">Human demonstrations compared to successful robot policy rollouts on our three manipulation tasks:
+                  picking and placing block, collecting balls in basket, and opening oven.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -179,6 +230,42 @@
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class = "container is-max-desktop">
+      <div class = "columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <h2 style="margin-bottom: 1em ;" class="title is-3">Scaling Laws</h2>
+            <div class="has-text-centered">
+                <img src="./static/images/ovenscaling.png" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <p class="is-size-6 has-text-grey">We show scaling laws in terms of success rate increases
+                  per unit of human hours. Baton increases in robustness with more
+                  data motivating the need for a highly scalable data collection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class = "container is-max-desktop">
+      <div class = "columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <h2 style="margin-bottom: 1em ;" class="title is-3">Compare to Teleoperation</h2>
+            <div class="has-text-centered">
+                <img src="./static/images/demorate.png" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <p class="is-size-6 has-text-grey">We compare the average data throughput of Baton in terms of demonstration per minute compared to VR teleoperation across
+                  two tasks. Baton achieves higher throughput in both demonstration and session rates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <footer class="footer">
     <div class="container">
