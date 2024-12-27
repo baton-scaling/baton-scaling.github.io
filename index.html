@@ -119,7 +119,7 @@
           <div class="content">
             <h2 style="margin-bottom: 1em ;" class="title is-3">Closed-loop Policy</h2>
             <div class="has-text-centered">
-                <img src="./static/images/closed_loop_policy.jpg" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <img src="./static/images/closed_loop_policy.jpg" alt="Close-loop Policy" style="max-width: 60%; height: auto;">
                 <p class="is-size-6 has-text-grey">The state representation is a concatenation of end-effector and object keypoints. The end-effector keypoints
                   are the 3D coordinates of the index, middle, ring, and thumb fingers. The object keypoints are a set of 2D pixels, mapped to starting frames
                   with a correspondence model and to subsequent frames with a point tracker model, then unprojected into 3D. A queue of past states is fed
@@ -138,7 +138,7 @@
           <div class="content">
             <h2 style="margin-bottom: 1em ;" class="title is-3">From Human to Robot</h2>
             <div class="has-text-centered">
-                <img src="./static/images/tasks.png" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <img src="./static/images/tasks.png" alt="From Human to Robot" style="max-width: 60%; height: auto;">
                 <p class="is-size-6 has-text-grey">Human demonstrations compared to successful robot policy rollouts on our three manipulation tasks:
                   picking and placing block, collecting balls in basket, and opening oven.</p>
             </div>
@@ -238,7 +238,7 @@
           <div class="content">
             <h2 style="margin-bottom: 1em ;" class="title is-3">Scaling Laws</h2>
             <div class="has-text-centered">
-                <img src="./static/images/ovenscaling.png" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <img src="./static/images/ovenscaling.png" alt="Scaling Laws" style="max-width: 60%; height: auto;">
                 <p class="is-size-6 has-text-grey">We show scaling laws in terms of success rate increases
                   per unit of human hours. Baton increases in robustness with more
                   data motivating the need for a highly scalable data collection.</p>
@@ -254,11 +254,60 @@
       <div class = "columns is-centered">
         <div class="column is-full-width">
           <div class="content">
+            <h2 style="margin-bottom: 1em ;" class="title is-3">Results</h2>
+            <div class="has-text-centered">
+                <img src="./static/images/task_success_rate.jpg" alt="Success rate" style="max-width: 60%; height: auto;">
+                <p class="is-size-6 has-text-grey">Success rate across tasks, evaluated on novel object poses
+                  unseen in training. Each model was trained on demos from 90
+                  minutes of data collection per task..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class = "container is-max-desktop">
+      <div class = "columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
             <h2 style="margin-bottom: 1em ;" class="title is-3">Compare to Teleoperation</h2>
             <div class="has-text-centered">
-                <img src="./static/images/demorate.png" alt="Hardware Setup" style="max-width: 60%; height: auto;">
+                <img src="./static/images/demorate.png" alt="Compare to Teleoperation" style="max-width: 60%; height: auto;">
                 <p class="is-size-6 has-text-grey">We compare the average data throughput of Baton in terms of demonstration per minute compared to VR teleoperation across
                   two tasks. Baton achieves higher throughput in both demonstration and session rates.</p>
+            </div>
+            <div class="has-text-centered">
+              <img src="./static/images/demotime.png" alt="Compare to Teleoperation" style="max-width: 60%; height: auto;">
+              <p class="is-size-6 has-text-grey">Average time in seconds of a demonstration collected by
+                Baton compared to VR Teleoperation. Baton yields improvements
+                in demonstration collection speed of over 2x for open oven and
+                over 4x for pick and place block.</p>
+            </div>
+            <div class="has-text-centered">
+              <img src="./static/images/trajectory.jpg" alt="Compare to Teleoperation" style="max-width: 60%; height: auto;">
+              <p class="is-size-6 has-text-grey">Comparison of trajectories: (a) Human demonstrations
+                are smooth and direct, while (b) teleoperated trajectories are er-
+                ratic and less efficient due to latency and lack of natural embodi-
+                ment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class = "container is-max-desktop">
+      <div class = "columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <h2 style="margin-bottom: 1em ;" class="title is-3">Compare to other methods</h2>
+            <div class="has-text-centered">
+                <img src="./static/images/compare_methods.jpg" alt="Compare to other methods" style="max-width: 60%; height: auto;">
+                <p class="is-size-6 has-text-grey">Comparison of data collection methods on various scalability criteria. “Passive” refers to the ability of a human demonstrator to
+                  collect data in their own embodiment without any extra overhead in terms of how the task should be done naturally.</p>
             </div>
           </div>
         </div>
